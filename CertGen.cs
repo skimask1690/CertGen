@@ -63,6 +63,12 @@ class Program
             }
         }
 
+    if (args.Length > 2)
+    {
+        Console.WriteLine("\nUsage: " + AppDomain.CurrentDomain.FriendlyName + " [key_length] [cert_name]");
+        return;
+    }
+
         string name = "MyCA.p12";
         int keyLength = 2048;
 
