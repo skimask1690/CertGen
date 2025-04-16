@@ -5,7 +5,7 @@
 ## 🔍 Features
 
 - Generates a self-signed certificate with configurable RSA key length.
-- Uses **SHA512WITHRSA** signature algorithm.
+- Uses **SHA256WITHRSA** signature algorithm.
 - Adds blank X509 extensions.
 - Supports CLI usage with optional arguments.
 
