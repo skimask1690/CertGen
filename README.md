@@ -35,7 +35,6 @@ CertGen.exe 4096 Cert.p12
 ## 📜 Notes
 
 - Certificate validity spans ~10 years.
-- Uses [BouncyCastle](https://github.com/bcgit/bc-csharp) to support advanced certificate generation not available in .NET's built-in libraries.
 - Ideal for local testing, internal tools, or as a custom root CA.
 
 ---
