@@ -37,7 +37,7 @@ public static class CreateCertificate
         x509V3CertificateGenerator.AddExtension(X509Extensions.SubjectKeyIdentifier, false, new SubjectKeyIdentifierStructure(asymmetricCipherKeyPair.Public));
         x509V3CertificateGenerator.AddExtension(X509Extensions.BasicConstraints, true, new BasicConstraints(true));
 
-        ISignatureFactory signatureFactory = new Asn1SignatureFactory("SHA512WITHRSA", asymmetricCipherKeyPair.Private, secureRandom);
+        ISignatureFactory signatureFactory = new Asn1SignatureFactory("SHA256WITHRSA", asymmetricCipherKeyPair.Private, secureRandom);
 
         return new X509Certificate2(
             DotNetUtilities.ToX509Certificate(x509V3CertificateGenerator.Generate(signatureFactory)))
