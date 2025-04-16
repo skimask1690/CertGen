@@ -6,7 +6,7 @@
 
 - Generates a self-signed certificate with configurable RSA key length.
 - Uses **SHA512WITHRSA** signature algorithm.
-- Adds X509 extensions.
+- Adds blank X509 extensions.
 - Supports CLI usage with optional arguments.
 - Outputs `.p12` (PKCS#12) certificate files with private key included.
 
