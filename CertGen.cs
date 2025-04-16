@@ -80,9 +80,9 @@ class Program
                 return;
             }
 
-            if (keyLength < 745)
+            if (keyLength < 489)
             {
-                Console.WriteLine("\nError: Key length must be 745 bits or greater.");
+                Console.WriteLine("\nError: Key length must be 489 bits or greater.");
                 return;
             }
         }
